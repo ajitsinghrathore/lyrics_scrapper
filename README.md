@@ -29,6 +29,6 @@ dependencies
     
     
     
- # statistical analysis of genere in datasets
+ # statistical analysis of genre in datasets
  
  ![pie chart](https://github.com/ajitsinghrathore/lyrics_scrapper/blob/master/L_scrapper/Figure_1.png?raw=true)
