@@ -31,4 +31,4 @@ dependencies
     
  # statistical analysis of genere in datasets
  
- ![pie chart](http://url/to/img.png)
+ ![pie chart](https://github.com/ajitsinghrathore/lyrics_scrapper/blob/master/L_scrapper/Figure_1.png)
