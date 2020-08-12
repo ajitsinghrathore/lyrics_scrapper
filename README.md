@@ -5,7 +5,7 @@ dependencies
 
   set your own virtual environment
 
-  navigate to [settings file](.vscode/settings.json) file and put your  path for virtual environment  of pytho 
+  navigate to [settings file](.vscode/settings.json) file and put your  path for virtual environment  of python 
   then install these dependencies in your virtual environment
    
      1 ->  pip install bs4
@@ -15,7 +15,7 @@ dependencies
      
     
 
-# how to run it
+## how to run it
 
 
 
@@ -27,13 +27,13 @@ dependencies
     
     
     
- # statistical analysis of genre in datasets
+ ## statistical analysis of genre in datasets
  
  ![pie chart](https://github.com/ajitsinghrathore/lyrics_scrapper/blob/master/L_scrapper/Figure_1.png?raw=true)
  
  
  
- # visualising data
+ ## visualising data
  
-  [execute this file](L_scrapper/visualization.py) 
+  firstly  fetch all the songs lyrics as per above instructions then [execute this file](L_scrapper/visualization.py) 
  
