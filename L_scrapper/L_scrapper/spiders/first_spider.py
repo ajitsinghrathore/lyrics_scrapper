@@ -7,9 +7,10 @@ class first_spider(scrapy.Spider):
     handle_httpstatus_list = [404,500,502]
     page_number = 1
     song_number = 1
-    base_url = "https://bollywoodsongsbook.com/atoz/all?page=1"
     start_urls = ["https://bollywoodsongsbook.com/atoz/all?page=1"]
+    
 
+    
     def parse(self, response):
 
         if response.status in first_spider.handle_httpstatus_list:
@@ -19,15 +20,19 @@ class first_spider(scrapy.Spider):
         all_links = response.css(".text-dark::attr(href)").extract()
 
         if len(all_links) != 0 :
-            #print("fetching from page ______________-*****************************_________"+ str(first_spider.page_number))
-
+            
             for link in all_links:
-                yield response.follow(link, self.sub_parse)
+                song_id = first_spider.song_number
+                first_spider.song_number += 1
+                yield response.follow(url = link, callback =  self.sub_parse , cb_kwargs=dict(song_id = song_id))
 
             first_spider.page_number +=1
             print("******************************************************************************")
             new_url = "https://bollywoodsongsbook.com/atoz/all?page="+str(first_spider.page_number)
             yield  response.follow(new_url, self.parse)
+    
+
+   
 
 
 
@@ -38,14 +43,15 @@ class first_spider(scrapy.Spider):
 
 
 
-    def sub_parse(self , response):
+
+
+
+    def sub_parse(self , response , song_id):
 
         if response.status in first_spider.handle_httpstatus_list:
             print("error in getting sub page ")
             yield 
 
-        song_id =  first_spider.song_number
-        first_spider.song_number +=1
         
         song_lyrics_raw = response.css(".col-sm-12+ .col-md-6").extract_first()
         soup = BeautifulSoup(song_lyrics_raw)  
@@ -62,4 +68,4 @@ class first_spider(scrapy.Spider):
         item["lyrics"] = song_lyrics
         item['genere'] = genere
 
-        yield item         
+        yield item        
