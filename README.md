@@ -21,10 +21,9 @@ dependencies
 
 
 
-    open terminal in ![settings_file](lyrics_scrapper/L_scrapper folder) and execute the command  "scrapy crawl name_of_first_spider -o lyrics.json"
-    
-    it will  pull all the songs from ![bollywood songs book](https://bollywoodsongsbook.com/)  and store them in the json file named lyrics.json
-    there are total around 15000  lyrics out of which i was able to pull out around 8500 songs after that got the error of max retries reached .
+  open terminal in [settings_file](lyrics_scrapper/L_scrapper folder) and execute the command  "scrapy crawl name_of_first_spider -o lyrics.json"
+  it will  pull all the songs from [bollywood songs book](https://bollywoodsongsbook.com/)  and store them in the json file named lyrics.json
+   there are total around 15000  lyrics out of which i was able to pull out around 8500 songs after that got the error of max retries reached .
     
     
     
