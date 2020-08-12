@@ -35,5 +35,5 @@ dependencies
  
  # visualising data
  
- run [execute this file](L_scrapper/visualization.py) 
+  [execute this file](L_scrapper/visualization.py) 
  
