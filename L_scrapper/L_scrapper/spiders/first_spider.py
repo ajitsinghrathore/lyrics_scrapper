@@ -4,12 +4,18 @@ from bs4 import BeautifulSoup
 
 class first_spider(scrapy.Spider):
     name = "name_of_first_spider"
+    handle_httpstatus_list = [404,500,502]
     page_number = 1
     song_number = 1
     base_url = "https://bollywoodsongsbook.com/atoz/all?page=1"
     start_urls = ["https://bollywoodsongsbook.com/atoz/all?page=1"]
 
     def parse(self, response):
+
+        if response.status in first_spider.handle_httpstatus_list:
+            print("error in switching to next page")
+            yield 
+
         all_links = response.css(".text-dark::attr(href)").extract()
 
         if all_links is  not None :
@@ -32,6 +38,11 @@ class first_spider(scrapy.Spider):
 
 
     def sub_parse(self , response):
+
+        if response.status in first_spider.handle_httpstatus_list:
+            print("error in getting sub page ")
+            yield 
+
         song_id =  first_spider.song_number
         first_spider.song_number +=1
         

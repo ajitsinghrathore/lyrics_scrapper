@@ -5,7 +5,7 @@ import numpy as np
 
 
 
-data_frame = pd.read_csv(r"C:\Users\Ajit\Desktop\lyrics scraping\L_scrapper\lyrics.csv")
+data_frame = pd.read_csv(r"../lyrics.csv")
 
 counts = data_frame['genere'].value_counts()
 
