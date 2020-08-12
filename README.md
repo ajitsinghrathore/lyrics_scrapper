@@ -3,14 +3,17 @@
 
 dependencies
 
-    1 ->  pip install bs4
-    2 ->  pip install scrapy
-    
-    
-    
-# set your own virtual environment
+     set your own virtual environment
 
-   navigate to settings.json file in vscode editor for visual studio and 
+     navigate to .vscode/settings.json file and put your  path for virtual environment  of python
+     
+     then install these dependencies in your virtual environment
+   
+     1 ->  pip install bs4
+     2 ->  pip install scrapy
+    
+    
+     
     
 
 # how to run it
