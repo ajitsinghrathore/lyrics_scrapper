@@ -5,7 +5,7 @@ import numpy as np
 
 
 
-data_frame = pd.read_csv(r"../lyrics.csv")
+data_frame = pd.read_csv(r"lyrics.csv")
 
 counts = data_frame['genere'].value_counts()
 
