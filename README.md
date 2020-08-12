@@ -1,4 +1,4 @@
-# lyrics_scrapper
+# lyrics and shayarii scrapper
 
 
 dependencies
