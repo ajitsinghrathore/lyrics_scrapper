@@ -5,7 +5,7 @@ dependencies
 
   set your own virtual environment
 
-  navigate to [settings file](.vscode/settings.json) file and put your  path for virtual environment  of pytho 
+  navigate to [settings file](.vscode/settings.json) file and put your  path for virtual environment  of python 
   then install these dependencies in your virtual environment
    
      1 ->  pip install bs4
