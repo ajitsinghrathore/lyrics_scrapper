@@ -16,3 +16,9 @@ class lyrics_item(scrapy.Item):
     title = scrapy.Field()
     
 
+
+class  shayari_item(scrapy.Item):
+    shayari = scrapy.Field()
+    shayari_id = scrapy.Field()
+    title = scrapy.Field()    
+

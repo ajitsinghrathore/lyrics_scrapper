@@ -18,13 +18,14 @@ class first_spider(scrapy.Spider):
 
         all_links = response.css(".text-dark::attr(href)").extract()
 
-        if all_links is  not None :
-            print("fetching from page ______________-*****************************_________"+ str(first_spider.page_number))
+        if len(all_links) != 0 :
+            #print("fetching from page ______________-*****************************_________"+ str(first_spider.page_number))
 
             for link in all_links:
                 yield response.follow(link, self.sub_parse)
 
             first_spider.page_number +=1
+            print("******************************************************************************")
             new_url = "https://bollywoodsongsbook.com/atoz/all?page="+str(first_spider.page_number)
             yield  response.follow(new_url, self.parse)
 
