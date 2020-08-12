@@ -1,4 +1,4 @@
-### lyrics_scrapper
+# lyrics_scrapper
 
 
 dependencies
@@ -15,7 +15,7 @@ dependencies
      
     
 
-# how to run it
+## how to run it
 
 
 
@@ -27,13 +27,13 @@ dependencies
     
     
     
- # statistical analysis of genre in datasets
+ ## statistical analysis of genre in datasets
  
  ![pie chart](https://github.com/ajitsinghrathore/lyrics_scrapper/blob/master/L_scrapper/Figure_1.png?raw=true)
  
  
  
- # visualising data
+ ## visualising data
  
   firstly  fetch all the songs lyrics as per above instructions then [execute this file](L_scrapper/visualization.py) 
  
