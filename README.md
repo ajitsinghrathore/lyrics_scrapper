@@ -6,8 +6,17 @@ dependencies
     1 ->  pip install bs4
     2 ->  pip install scrapy
     
+    
+    
+# set your own virtual environment
+
+   navigate to settings.json file in vscode editor for visual studio and 
+    
 
 # how to run it
+
+
+
 
     open terminal and execute the command  "scrapy crawl name_of_first_spider -o lyrics.json"
     
