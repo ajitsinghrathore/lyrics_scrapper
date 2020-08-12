@@ -27,3 +27,8 @@ dependencies
     there are total around 15000  lyrics out of which i was able to pull out around 8500 songs after that got the error of max retries reached .
     
     
+    
+    
+ # statistical analysis of genere in datasets
+ 
+ ![pie chart](http://url/to/img.png)
