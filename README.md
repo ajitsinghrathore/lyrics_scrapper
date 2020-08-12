@@ -35,5 +35,5 @@ dependencies
  
  # visualising data
  
-  [execute this file](L_scrapper/visualization.py) 
+  firstly  fetch all the songs lyrics as per above instructions then [execute this file](L_scrapper/visualization.py) 
  
